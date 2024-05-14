@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="finish.js"></script>
+</head>
+<body>
+    <div>
+        true + false (выведет 1(1+0=1))
+        12/"6" (выведет 2)
+        "number" + 15 + 3 (выведет number153(+ имеет ассоциативность слева направо))
+        15 + 3 + "number" (выведет 18number(тк. оба числа идут первее, они имеют свойства складываться))
+        '1'> null (выведет true)
+        "foo" ++ "bar"(выведет fooNaN(унарный оператор + имеет более высокий приоритет, чем обычный следовательно +bar вычисляется первым-NaN))
+        'true'==true(выведет false)
+        false=='false'(выведет false)
+        null==''(выведет false)
+    </div>
+    <h1>Добро пожаловать!</h1> 
+    <p>Пожалуйста, введите ваше имя: <input type="text" id="username"></p> 
+    <button onclick="greetUser()">Нажмите, чтобы приветствовать</button> 
+    <p id="greeting"></p>
+    <h2>Добавить нового студента</h2> 
+    <input type="text" id="nameInput" placeholder="Имя"> 
+    <input type="number" id="ageInput" placeholder="Возраст"> 
+    <input type="number" id="courseInput" placeholder="Курс"> 
+    <button onclick="addStudent()">Добавить студента</button> 
+    <div id="studentsList"></div>
+    <div>
+        this - указывает на текущий объект. Позволяет обратиться к свойствам и методам этого объекта без указания его имени.
+        Используется:
+        1. для обращения к его свойствам и методам
+        2. при передаче объекта как параметра в другой метод или функцию
+        3. в конструкторе, чтобы инициализировать его свойства
+        4. в обработчиках событий для обращения к объекту, который вызвал событие
+        5. в функциях, где необходимо обратиться к контексту выполнения
+    </div>
+</body>
+</html>
